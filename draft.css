@@ -1,25 +1,19 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #1f2937;
 }
 
 /* Header */
-header {
+.navbar {
   background-color: #1f2937;
   color: white;
-  padding: 20px 10%;
-}
-
-.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 150px;
 }
 
 .logo {
@@ -27,159 +21,137 @@ header {
   font-weight: bold;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-nav a {
+.nav-links a {
   color: #e5e7eb;
   text-decoration: none;
-  font-size: 18px;
+  margin-left: 20px;
+  font-size: 14px;
 }
 
 /* Hero Section */
 .hero {
-  background-color: #1f2937;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
-  flex-wrap: wrap;
+  background-color: #1f2937;
+  color: white;
+  padding: 60px 150px;
 }
 
-.hero-text {
-  flex: 1 1 400px;
-}
-
-.hero h1 {
+.hero-text h1 {
   font-size: 48px;
-  font-weight: bolder;
-  color: #f9faf8;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 18px;
+.hero-text p {
   color: #e5e7eb;
-  margin-top: 10px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
-.hero button {
+.btn {
   background-color: #3882f6;
   color: white;
-  padding: 8px 25px;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
+  padding: 10px 25px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .hero-image {
-  flex: 1 1 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.placeholder {
   background-color: #6d747d;
-  color: white;
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
   height: 200px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
 }
 
 /* Info Section */
 .info {
-  padding: 60px 10%;
   text-align: center;
+  padding: 50px 100px;
 }
 
 .info h2 {
-  font-size: 36px;
-  color: #1f2937;
+  font-size: 28px;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 
-.info-boxes {
+.info-cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 150px;
 }
 
 .box {
   width: 150px;
-}
-
-.square {
-  width: 150px;
   height: 150px;
   border: 3px solid #3882f6;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.box p {
+.card p {
+  color: #6b7280;
   font-size: 14px;
-  color: #1f2937;
 }
 
 /* Quote Section */
 .quote {
   background-color: #e5e7eb;
-  padding: 80px 15%;
-  text-align: center;
+  padding: 60px 200px;
   font-style: italic;
-  color: #1f2937;
+}
+
+.quote-text {
   font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 20px;
 }
 
-.quote footer {
+.author {
+  text-align: right;
   font-weight: bold;
-  margin-top: 20px;
 }
 
-/* CTA Section */
+/* Call To Action Section */
 .cta {
   background-color: white;
-  padding: 60px 10%;
+  padding: 60px 150px;
 }
 
-.cta-container {
+.cta-content {
   background-color: #3882f6;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 40px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .cta-text h3 {
-  font-size: 20px;
+  margin: 0 0 10px;
 }
 
-.cta-text p {
-  font-size: 16px;
-}
-
-.cta button {
-  background-color: transparent;
-  border: 2px solid white;
+.btn-outline {
+  background: transparent;
   color: white;
-  padding: 8px 25px;
+  border: 2px solid white;
   border-radius: 8px;
-  font-weight: bold;
+  padding: 8px 25px;
+  font-size: 16px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 /* Footer */
@@ -187,6 +159,6 @@ footer {
   background-color: #1f2937;
   color: #e5e7eb;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   font-size: 14px;
 }
