@@ -90,3 +90,4 @@ fetchApi();
 let name="Park Sulen";
 let age=30;
 console.log(`I am ${name} and my age is ${age}`);
+
