@@ -61,7 +61,7 @@ const promise=new Promise ((resolve,reject)=>{
     },2000)
 })
 //console.log("Before promise execution");
-promise.then((result)=>console.log(result))
+/*promise.then((result)=>console.log(result))
        .catch(err=>console.log(err))
        .finally(()=>{console.log("Promises completed")})
 //console.log("After promise execution");
@@ -84,10 +84,30 @@ async function fetchApi(){
         console.log(err)
     }
 }
-fetchApi();
+fetchApi();*/
 
 //String Literals
 let name="Park Sulen";
 let age=30;
-console.log(`I am ${name} and my age is ${age}`);
+//console.log(`I am ${name} and my age is ${age}`);
+
+const mul=(a,b)=>{
+    return a*b
+}
+const square=(n)=>{
+    return(n,n)
+}
+const print=(n)=>{
+    let sq=square(n);
+    console.log(sq);
+}
+//print(3);
+
+//event looping
+console.log("first");
+Promise.resolve().then(console.log('From promises'));
+setTimeout(()=>{
+    console.log("Inside Timeout");
+},2000)
+console.log("last");
 
