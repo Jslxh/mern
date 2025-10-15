@@ -1,84 +1,34 @@
+/*import User from './components/User'
+import Hii from './components/Hii'
+import For from './components/For'*/
+
+/*    <User name = 'Jay Jeon' dept = 'M.com' skills = {['HTML','CSS','JS','Python']}/>
+      <br></br>
+      <Hii foods = {['bibimbap','kimchi','soju','pasta','jjangmeyeon','ramyeon']}/>
+      <br></br>
+      <For num = {[1,2,3,4,5,6,7,8,9]}/> */
+
 import React from 'react'
+import {Routes,Route} from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Services from './pages/Services'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div class="hii">
-        <div class="container">
-          <h2>Header Logo</h2>
-          <nav class="nav">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
-          </nav>
-          
-      </div>
-      <section hero ="hero">
-          <div class="hero-text">
-              <ul class ="list">
-                  <h1><b>This website is awesome !</b></h1>
-                  <p>This website has some subtext that goes here under the main title. 
-                      It’s a smaller font and the color is lower contrast.
-                  </p>
-                  <button class="btn1">Sign up</button>
-              </ul>
-              <div class="hero-image">
-                  this is a placeholder for an image
-              </div> 
-          </div>
-      </section>
-      <section class="info">
-          <h2>Some random information</h2>
-          <div class="info-cards">
-              <div class="card">
-                  <div class="box"></div>
-                  <p>this is some subtext under an illustration or image</p>
-              </div>
-              <div class="card">
-                  <div class="box"></div>
-                  <p>this is some subtext under an illustration or image</p>
-              </div>
-              <div class="card">
-                  <div class="box"></div>
-                  <p>this is some subtext under an illustration or image</p>
-              </div>
-              <div class="card">
-                  <div class="box"></div>
-                  <p>this is some subtext under an illustration or image</p>
-              </div>
-          </div>
-      </section>
-
-      <div class="quote">
-          <p class="quote-text">
-              <em>
-                  This is an inspiring quote, or a testimonial from a customer.
-              Maybe it’s just filling up space, or maybe people will actually
-              read it. Who knows? All I know is that it looks nice.
-              </em>
-          </p>
-          <p class="author">- Thor, God of Thunder</p>
-      </div>
-
-      <div class="cls">
-          <ul class="cta">
-              <div class="cta-text">
-              <h3>Call to action! It’s time!</h3>
-              <p>
-                  Sign up for our product by clicking that button right over there!
-              </p>
-              </div>
-              <div>
-                  <button class="btn2">Sign up</button>
-              </div>
-          </ul>
-      </div>
-
-    <footer>
-        <p>Copyright © The Odin Project 2021</p>
-    </footer>
-
-    </div>
-  )
+    <>
+    <Navbar/>
+      <Routes>
+        <Route path ="/" Component={Home}/>
+        <Route path ="/about" Component={About}/>
+        <Route path ="/contact" Component={Contact}/>
+        <Route path ="/services" Component={Services}/>
+        <Route path ="/navbar" Component={Navbar}/>
+      </Routes>
+    </>
+  )   
 }
 
 export default App
